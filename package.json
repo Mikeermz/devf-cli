@@ -1,0 +1,25 @@
+{
+  "name": "cli-devf",
+  "version": "0.0.1",
+  "description": "Cli for excercises in devf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "url": "https://github.com/devfmx/devf-cli"
+  },
+  "author": "Devf",
+  "license": "MIT",
+  "dependencies": {
+    "after": "^0.8.2",
+    "fs": "0.0.1-security",
+    "inquirer": "^6.0.0",
+    "workshopper-adventure": "^6.0.4",
+    "workshopper-exercise": "^3.0.1",
+    "xtend": "^4.0.1"
+  },
+  "bin": {
+    "devf": "./bin/devfcli.js"
+  }
+}
