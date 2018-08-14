@@ -5,10 +5,10 @@ const path  = require("path");
 const fs = require('fs');
 const createFile = require('./file').createFile
 const axios  = require('axios');
-const {API_URL} = require('./const')
+const {API_URL,EXERCISE_PATH} = require('./const')
 const chalk = require('chalk');
 
-let devfFile = path.join(__dirname,".devf")
+let devfFile = path.join(EXERCISE_PATH,".devf")
 
 
 const run  = async () => {

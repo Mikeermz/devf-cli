@@ -15,6 +15,7 @@ exercise = execute(exercise)
 exercise = comparestdout(exercise)
 
 exercise.addSetup(function(mode,cb){
+
     let int1 = generateRandom(1,15)
     let int2 = generateRandom(1,15)
 
