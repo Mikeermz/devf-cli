@@ -12,19 +12,23 @@ Para escribir un programa en Node.js, crea un archivo con extensión `.js` y den
 ```sh
 $ node program.js
 ```
-Recuerda que los argumentos vienen en forma de string para convertirlos a enteros utiliza
-```js
-parseInt("12")
-```
-
-Para recibir parametros ocupa del sistema ocupa  la sguiente forma
+Para recibir parametros del sistema ocupa  la siguiente forma:
 
 ```js
     function(process.argv[2],process.argv[3]){}
 ```
  `'process.argv'`  es una forma  de recibir parametros como array desde el sistema
 
-Recuerda que  para comparar valores pudes utilizar  `IF` para comparar valores
+ **Nota:** Los argumentos se tienen que  pasar desde el numero 2
+ `process.argv[2]` 
+
+
+Recuerda que los argumentos vienen en forma de string para convertirlos a enteros utiliza
+```js
+parseInt("12")
+```
+
+Recuerda que  para comparar valores pudes utilizar  `IF` 
 
 ```js
 if(valor1 == valor2){

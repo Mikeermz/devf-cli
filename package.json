@@ -15,6 +15,9 @@
     "after": "^0.8.2",
     "fs": "0.0.1-security",
     "inquirer": "^6.0.0",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.38.0",
     "workshopper-adventure": "^6.0.4",
     "workshopper-exercise": "^3.0.1",
     "xtend": "^4.0.1"
