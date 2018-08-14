@@ -4,6 +4,9 @@ const questions = require('./questions');
 const path  = require("path");
 const fs = require('fs');
 const createFile = require('./file').createFile
+const axios  = require('axios');
+const {API_URL} = require('./const')
+const chalk = require('chalk');
 
 let devfFile = path.join(__dirname,".devf")
 
@@ -13,9 +16,17 @@ const run  = async () => {
        workshopper.execute(process.argv.slice(2))
 
     }else{
-        const key = await inquirer.prompt(questions)
-        const  created = createFile(key)
-        if(created) workshopper.execute(process.argv.slice(2))
+        const {email} = await inquirer.prompt(questions)
+       axios(API_URL+`/student/client/${email}`).then((student) => {
+        const  created = createFile(email)
+            if(created) workshopper.execute(process.argv.slice(2))
+       }).catch((err) => {
+        console.log(err)
+        console.log(chalk.red('Hubo un problema'))
+
+       })
+
+        
     }
 
    

@@ -1,13 +1,13 @@
 module.exports = [
     {
-        name: 'apikey',
+        name: 'email',
         type: 'input',
-        message: 'Ingresa tu API KEY',
+        message: 'Ingresa tu email',
         validate: function( value ) {
             if (value.length) {
               return true;
             } else {
-              return 'Por favor ingresa tu api key';
+              return 'Por favor ingresa tu email';
             }
           }
       }

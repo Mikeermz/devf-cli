@@ -15,7 +15,9 @@ devfcli.addAll([
     'prueba',
     'IF_division_exacta',
     'IF_mayor_o_menor',
-    'ARRAY_cien_valores'
+    'ARRAY_cien_valores',
+    'ARRAY_suma',
+    'ARRAY_tabla_10'
   ]);
 
 module.exports = devfcli;
