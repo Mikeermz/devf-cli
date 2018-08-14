@@ -14,7 +14,8 @@ const devfcli  =  workshopper({
 devfcli.addAll([
     'prueba',
     'IF_division_exacta',
-    'IF_mayor_o_menor'
+    'IF_mayor_o_menor',
+    'ARRAY_cien_valores'
   ]);
 
 module.exports = devfcli;
